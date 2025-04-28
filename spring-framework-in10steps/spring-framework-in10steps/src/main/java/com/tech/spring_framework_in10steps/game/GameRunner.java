@@ -2,17 +2,19 @@ package com.tech.spring_framework_in10steps.game;
 
 public class GameRunner {
 	
-	private MarioGame game;
+	//private MarioGame game;
+	
+	private SuperContraGame scGame;
 
-	public GameRunner(MarioGame game) {
-		this.game=game;
+	public GameRunner(SuperContraGame scGame) {
+		this.scGame=scGame;
 	}
 
 	public void run() {
-		game.up();
-		game.down();
-		game.left();
-		game.right();
+		scGame.up();
+		scGame.down();
+		scGame.left();
+		scGame.right();
 	}
 	
 
