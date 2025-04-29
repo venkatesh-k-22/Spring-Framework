@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.tech.spring_framework_in10steps.game.GameRunner;
+import com.tech.spring_framework_in10steps.game.GamingConsole;
 import com.tech.spring_framework_in10steps.game.MarioGame;
 import com.tech.spring_framework_in10steps.game.Pacman;
 import com.tech.spring_framework_in10steps.game.SuperContraGame;
@@ -17,7 +18,7 @@ public class SpringFrameworkIn10stepsApplication {
 		//you can use either MarioGame or ContraGame
 		//MarioGame game = new MarioGame();
 		//SuperContraGame game = new SuperContraGame();
-		Pacman game = new Pacman();
+		GamingConsole game = new Pacman(); //Upcasting 
 		GameRunner gameRunner = new GameRunner(game);
 		gameRunner.run();
 	}
