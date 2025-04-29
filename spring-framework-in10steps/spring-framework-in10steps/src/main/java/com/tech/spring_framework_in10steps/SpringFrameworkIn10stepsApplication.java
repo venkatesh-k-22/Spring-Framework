@@ -12,9 +12,11 @@ public class SpringFrameworkIn10stepsApplication {
 
 	public static void main(String[] args) {
 		//SpringApplication.run(SpringFrameworkIn10stepsApplication.class, args);
-		//MarioGame marioGame = new MarioGame();
-		SuperContraGame scGame = new SuperContraGame();
-		GameRunner gameRunner = new GameRunner(scGame);
+	
+		//you can use either MarioGame or ContraGame
+		MarioGame game = new MarioGame();
+		//SuperContraGame game = new SuperContraGame();
+		GameRunner gameRunner = new GameRunner(game);
 		gameRunner.run();
 	}
 
